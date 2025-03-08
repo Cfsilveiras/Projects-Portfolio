@@ -11,6 +11,27 @@
    }
 }
 
+@keyframes rgb-border {
+   0% {
+     
+     border-color: rgb(0, 8, 4); /* Cor inicial da borda */
+   }
+   25% {
+     border-color: rgb(237, 237, 241); /* Muda para azul */
+   }
+   50% {
+     
+     border-color: rgb(172, 238, 178); /* Muda para vermelho */
+   }
+   75% {
+     border-color: rgb(12, 197, 40); /* Muda para amarelo */
+   }
+   100% {
+     
+     border-color: rgb(4, 0, 7); /* Volta para a cor inicial */
+   }
+ }
+
 
 *{
     margin: 0;
@@ -24,11 +45,11 @@
   
  body{
     background: black;
-    height: 100vh;
+    height: 200vh;
+    width: auto;
  }
 
  .conteiner-menu{
-    border: 2px solid red;
     display: flex;
     position: relative;
     
@@ -47,7 +68,8 @@
     animation-direction: alternate;
  }
  .titles p{
-   color: rgb(0, 194, 26);
+   color: rgb(12, 197, 40);
+   
  }
 
 
@@ -101,7 +123,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border: 4px solid green;
     transition: all 1.0s;
     
  }
@@ -146,6 +167,74 @@
 }
 .texts p{
 padding-top: 2vh;
+}
+
+
+.text-skill{
+   border-top: 1px solid rgb(12, 197, 40);
+   letter-spacing: 0.2vw;
+   position: absolute;
+   top: 100vh;
+   display: flex-start;
+   left: 28vw;
+}
+
+.text-skill h1{
+   padding: 1vh 1vw;
+   color: rgb(12, 197, 40);
+   font-weight: 400;
+   letter-spacing: 0.2vw;
+   animation: moveText 4s infinite;
+   animation-direction: alternate;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+
+.skill-container {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   height: 28vh;
+   width: 80vw;
+   position: absolute;
+   top: 120vh;
+   left: 6vw;
+
+}
+
+.skill {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1vh 0;
+   border-bottom: 1px solid white;
+   width: 50%;
+   transition: all 1.0s;
+}
+
+
+
+.skill-bar {
+   animation: rgb-border 10s infinite;
+   animation-direction: alternate;
+   text-align: center;
+   border: 2px solid white;
+   width: 85%;
+   margin-top: 2vh;
+   background-color: transparent;
+   border-radius: 5px;
+   overflow: hidden;
+   margin-left: 1.5vw;
+   transition: all 4.0s;
+}
+
+.skill-fill {
+   height: 100%;
+   background-color: #fdfffd;
+   width: 0%;
+   transition: width 1.5s ease-in-out;
 }
 
 
