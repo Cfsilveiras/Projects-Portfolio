@@ -45,7 +45,7 @@
   
  body{
     background: black;
-    height: 200vh;
+    height: 300vh;
     width: auto;
  }
 
@@ -180,7 +180,7 @@ color: whitesmoke;
    position: absolute;
    top: 100vh;
    display: flex-start;
-   left: 28vw;
+   left: 8vw;
 }
 
 .text-skill h1{
@@ -193,6 +193,7 @@ color: whitesmoke;
    justify-content: center;
    align-items: center;
    text-align: center;
+   
 }
 
 
@@ -277,7 +278,8 @@ color: whitesmoke;
    justify-content: center;
    align-items: center;
    text-align: center;
-   border-bottom: 2px solid #2ca52c;
+   border: 2px solid #2ca52c;
+   border-start-end-radius: 20px;
    
 }
 
@@ -296,6 +298,7 @@ color: whitesmoke;
    align-items: center;
    text-align: center;
    width: 30%;
+   
    text-decoration: none;
    top: 150vh;
    left: 50vw;
@@ -320,7 +323,8 @@ color: whitesmoke;
    justify-content: center;
    align-items: center;
    text-align: center;
-   border-bottom: 2px solid #2ca52c;
+   border: 2px solid #2ca52c;
+   border-start-end-radius: 20px;
    
 }
 
@@ -331,10 +335,148 @@ color: whitesmoke;
    
 }
 
+.description-skill-css h1{
+   padding: 1vh 1vw;
+   color: rgb(12, 197, 40);
+   font-weight: 400;
+   letter-spacing: 0.2vw;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+  
+}
+
+.description-skill-javasc{
+   color: white;
+   position: absolute;
+   display: flex-start;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 30%;
+   text-decoration: none;
+   top: 200vh;
+   left: 50vw;
+}
+
+.description-skill-javasc h1{
+   padding: 1vh 1vw;
+   color: rgb(12, 197, 40);
+   font-weight: 400;
+   letter-spacing: 0.2vw;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+  
+}
+
+.description-skill-javasc p{
+   padding: 1vh 1vw;
+   color: whitesmoke;
+   font-weight: 200;
+   letter-spacing: 0.2vw;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border: 2px solid #2ca52c;
+   border-start-end-radius: 20px;
+   
+}
+
+.description-skill-javasc a{
+   text-decoration: none;
+   color: rgb(12, 197, 40);
+   font-weight: 800;
+   
+}
+
+.description-skill-sql{
+   color: white;
+   position: absolute;
+   display: flex-start;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 30%;
+   text-decoration: none;
+   top: 200vh;
+   left: 4.0vw;
+}
+
+.description-skill-sql h1{
+   padding: 1vh 1vw;
+   color: rgb(12, 197, 40);
+   font-weight: 400;
+   letter-spacing: 0.2vw;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+  
+}
+
+
+.description-skill-sql p{
+   padding: 1vh 1vw;
+   color: whitesmoke;
+   font-weight: 200;
+   letter-spacing: 0.2vw;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border: 2px solid #2ca52c;
+   border-start-end-radius: 20px;
+}
+
+
+.description-skill-sql a{
+   text-decoration: none;
+   color: rgb(12, 197, 40);
+   font-weight: 800;
+   
+}
+
+
+.project-container{
+   letter-spacing: 0.2vw;
+   position: absolute;
+   top: 280vh;
+   display: flex-start;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 80%;
+}
+
+.project-container h1{
+   padding-top: 2vh;
+   display: flex;
+   border-top: 2px solid #2ca52c;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 4vh;
+   letter-spacing: 4px;
+   color: green;
+   font-weight: 400;
+   animation: moveText 4s infinite reverse;
+   animation-direction: alternate;
+}
 
 
 
 
+
+
+
+.footer{
+   color: white;
+   text-decoration: none;
+   position: relative;
+   top: 300vh;
+   left: 8vw;
+}
 
 
 @media (max-width: 768px)  {
