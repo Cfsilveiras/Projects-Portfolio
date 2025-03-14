@@ -550,12 +550,21 @@ color: whitesmoke;
    color: white;
    text-decoration: none;
    position: relative;
-   top: 300vh;
-   left: 8vw;
+   top: 40vh;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 1vh 0;
+   letter-spacing: 0.4rem;
+   
 }
 
 
-  /* 📱 Ajustes para telas menores que 768px (tablets e celulares) */
+
+
+/*---------------------------------Area de media querys----------------------------------------*/
+
+
 @media (max-width: 768px) {
    body {
        height: 100vh;
